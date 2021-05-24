@@ -155,7 +155,7 @@
                 <?php 
                 // prev url 
 
-                $preUrl =$isFirst = ($page == 1)? 'javascript:void(0)' : '//localhost/pixabay/?s='.$imageName.'&page='.$prev = $page-1;
+                $preUrl =$isFirst = ($page == 1)? 'javascript:void(0)' : '://tusharahmmed.github.io/search-image/?s='.$imageName.'&page='.$prev = $page-1;
 
                 ?>
 
@@ -171,16 +171,16 @@
 
                     $activeClass = ($i == $page)? 'active' : '';
 
-                   // $currentUrl = "http://localhost/pixabay/?s=".$imageName."&page=3".$i; 
+                   // $currentUrl = "//tusharahmmed.github.io/search-image/?s=".$imageName."&page=3".$i; 
                     
                 ?>
 
-                    <a href="<?php echo '//localhost/pixabay/?s='.$imageName.'&page='.$i ; ?>" class="<?php echo $activeClass; ?> tm-paging-link"><?php echo $i; ?></a>
+                    <a href="<?php echo '//tusharahmmed.github.io/search-image/?s='.$imageName.'&page='.$i ; ?>" class="<?php echo $activeClass; ?> tm-paging-link"><?php echo $i; ?></a>
 
                 <?php }
                 
                 // next url
-                $nextUrl = $isLast = ($page == $totalPage)? 'javascript:void(0)' : '//localhost/pixabay/?s='.$imageName.'&page='.$prev = $page+1;
+                $nextUrl = $isLast = ($page == $totalPage)? 'javascript:void(0)' : '//tusharahmmed.github.io/search-image/?s='.$imageName.'&page='.$prev = $page+1;
                 
                 ?>
 
