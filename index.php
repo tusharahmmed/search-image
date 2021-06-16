@@ -62,8 +62,11 @@
 
     $imageName = (isset($_REQUEST['s'])) ? $_REQUEST['s'] : 'hi';;
     $dataPerPage = 28;
+        
+    // your api key
+    $apiKey = "Your_API_KEY";
 
-    $apiUrl = 'https://pixabay.com/api/?key=21755814-c9d064145c357e7fac13a8c67&q='.$imageName.'&image_type=photo&pretty=true&orientation=horizontal&per_page='.$dataPerPage.'&page='.$page.'';
+    $apiUrl = 'https://pixabay.com/api/?key='.$apiKey.'&q='.$imageName.'&image_type=photo&pretty=true&orientation=horizontal&per_page='.$dataPerPage.'&page='.$page.'';
 
     $json_data = file_get_contents($apiUrl);
 
